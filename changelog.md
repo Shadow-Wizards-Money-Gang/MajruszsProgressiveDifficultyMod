@@ -1,0 +1,1 @@
+- fixed compatibility crash related to Soul Jar (reported by @𝙿𝙰𝚇𝚇)

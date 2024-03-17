@@ -251,7 +251,8 @@ public class SoulJar extends Item {
 				.addCondition( data->data.itemStack.getItem() instanceof SoulJar );
 
 			OnItemAttributeTooltip.listen( Client::addTooltip )
-				.addCondition( data->SoulJar.canHaveSouls( data.itemStack ) );
+				.addCondition( data->SoulJar.canHaveSouls( data.itemStack ) )
+				.addCondition( data->Side.getLocalPlayer() != null /* compatibility check */ );
 
 			OnItemTooltip.listen( Client::addTooltip )
 				.addCondition( data->SoulJar.canHaveSouls( data.itemStack ) );
