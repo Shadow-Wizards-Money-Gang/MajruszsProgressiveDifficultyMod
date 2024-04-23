@@ -10,10 +10,6 @@ import net.minecraft.world.item.Rarity;
 import java.util.function.Supplier;
 
 public class TatteredArmor extends ArmorItem {
-	static {
-		OnEntityPowderSnowCheck.listen( OnEntityPowderSnowCheck::makeWalkable )
-			.addCondition( TatteredArmor::hasBootsEquipped );
-	}
 
 	public static Supplier< TatteredArmor > boots() {
 		return ()->new TatteredArmor( Type.BOOTS );
@@ -29,11 +25,6 @@ public class TatteredArmor extends ArmorItem {
 
 	public static Supplier< TatteredArmor > leggings() {
 		return ()->new TatteredArmor( Type.LEGGINGS );
-	}
-
-	private static boolean hasBootsEquipped( OnEntityPowderSnowCheck data ) {
-		return data.entity instanceof LivingEntity entity
-			&& entity.getItemBySlot( EquipmentSlot.FEET ).is( MajruszsDifficulty.TATTERED_BOOTS_ITEM.get() );
 	}
 
 	private TatteredArmor( Type type ) {
