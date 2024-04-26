@@ -66,7 +66,8 @@ public class ItemSet {
 	private ItemSet() {
 		Side.runOnClient( ()->()->{
 			OnItemTooltip.listen( data->Client.addTooltip( data, this ) )
-				.addCondition( data->this.requirements.stream().anyMatch( requirement->requirement.is( data.itemStack ) ) );
+				.addCondition( data->this.requirements.stream().anyMatch( requirement->requirement.is( data.itemStack ) ) )
+				.addCondition( data->Side.getLocalPlayer() != null /* compatibility check */ );
 		} );
 	}
 
