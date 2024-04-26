@@ -1,3 +1,4 @@
+- added Forge tags to items (thanks to @DiogoSoaresMiranda)
 - fixed compatibility crash related to Soul Jar (reported by @𝙿𝙰𝚇𝚇)
 - fixed compatibility error when reloading resources (reported by @SettingDust)
 - fixed compatibility crash with Randomium (reported by @Doom, @ZacGames, @AllyJaxx)
