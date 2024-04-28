@@ -1,6 +1,5 @@
-- added Undead Army compatibility with RpgZ mod (suggested by @Sazuzaki)
-- added Japanese translation (thanks to @もふざとう)
-- changed fishing requirements for Angler Treasure Bag from 20/15/10 to 16 on all game stages
-- fixed bug with mobs being able to spawn in Mushroom Fields and Deep Dark (reported by @Dagamer2021)
-- fixed bug with Undead Army progress bars displaying invalid values after reentering the world
-- fixed bug with mob groups being able to spawn recursively
+- added Forge tags to items (thanks to @DiogoSoaresMiranda)
+- added Korean translation (thanks to @glasslim)
+- fixed compatibility crash related to Soul Jar (reported by @𝙿𝙰𝚇𝚇)
+- fixed compatibility error when reloading resources (reported by @SettingDust)
+- fixed compatibility crash with Randomium (reported by @Doom, @ZacGames, @AllyJaxx)
